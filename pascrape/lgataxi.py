@@ -12,7 +12,7 @@ try:
     browser = webdriver.PhantomJS()
     browser.get(url)
     innerHTML = browser.execute_script("return document.body.innerHTML") #returns the inner HTML as a stringbr
-    browser.close()
+    browser.quit()
     soup = BeautifulSoup('<!doctype html>'+innerHTML, 'html.parser')
     weightMatrix = []
 
@@ -33,4 +33,4 @@ try:
     json_data = json.dumps(weightMatrix)
     print(json_data)
 except Exception as e:
-    browser.close()
+    browser.quit()
