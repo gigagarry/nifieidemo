@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nifi-gs-nar" />
+        <module name="nifi-gs-processors" />
+      </profile>
+      <profile name="Annotation profile for gsnars" enabled="true">
+        <sourceOutputDir name="../insightedge-grafana-connector-master/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../insightedge-grafana-connector-master/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="insightedge-grafana-connector" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="insightedge-grafana-connector (1)" target="1.5" />
+      <module name="insightedge-grafana-connector (2)" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

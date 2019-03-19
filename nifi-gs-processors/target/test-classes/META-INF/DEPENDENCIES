@@ -1,0 +1,177 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+nifi-gs-processors
+
+
+From: 'an unknown organization'
+  - AntLR Parser Generator (http://www.antlr.org/) antlr:antlr:jar:2.7.7
+    License: BSD License  (http://www.antlr.org/license.html)
+  - AOP alliance (http://aopalliance.sourceforge.net) aopalliance:aopalliance:jar:1.0
+    License: Public Domain 
+  - avalon-framework  avalon-framework:avalon-framework:jar:4.1.5
+
+  - Atomikos Util (http://www.atomikos.com/ate/atomikos-util/) com.atomikos:atomikos-util:jar:3.8.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Transactions Core (http://www.atomikos.com/ate/transactions/) com.atomikos:transactions:jar:3.8.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Transactions API (http://www.atomikos.com/ate/transactions-api/) com.atomikos:transactions-api:jar:3.8.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Transactions JTA (http://www.atomikos.com/ate/transactions-jta/) com.atomikos:transactions-jta:jar:3.8.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - xap-admin  com.gigaspaces:xap-admin:jar:14.0.1
+
+  - xap-mx-off-heap  com.gigaspaces:xap-mx-off-heap:jar:14.0.1
+
+  - xap-mx-pmem  com.gigaspaces:xap-mx-pmem:jar:14.0.1
+
+  - xap-premium-common  com.gigaspaces:xap-premium-common:jar:14.0.1
+
+  - xap-service-grid  com.gigaspaces:xap-service-grid:jar:14.0.1
+
+  - xap-service-grid-boot  com.gigaspaces:xap-service-grid-boot:jar:14.0.1
+
+  - xap-wan-gateway  com.gigaspaces:xap-wan-gateway:jar:14.0.1
+
+  - xap-wan-gateway-spring  com.gigaspaces:xap-wan-gateway-spring:jar:14.0.1
+
+  - native  com.gigaspaces.pmem:native:jar:1.0
+
+  - pmem-jni  com.gigaspaces.pmem:pmem-jni:jar:1.0.1
+
+  - Java Message Service (http://java.sun.com/products/jms) javax.jms:jms:jar:1.1
+
+  - com.springsource.org.aopalliance  org.aopalliance:com.springsource.org.aopalliance:jar:1.0.0
+
+  - Apache Kafka (http://kafka.apache.org) org.apache.kafka:kafka-clients:jar:1.0.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - xap-asm  org.gigaspaces:xap-asm:jar:14.0.1
+
+  - xap-common  org.gigaspaces:xap-common:jar:14.0.1
+
+  - xap-datagrid  org.gigaspaces:xap-datagrid:jar:14.0.1
+
+  - xap-jms  org.gigaspaces:xap-jms:jar:14.0.1
+
+  - xap-openspaces  org.gigaspaces:xap-openspaces:jar:14.0.1
+
+  - xap-trove  org.gigaspaces:xap-trove:jar:14.0.1
+
+  - Jacorb (http://www.jacorb.org) org.jacorb:jacorb:jar:2.2.3-jonas-patch-20071018
+    License: lgpl  (http://www.gnu.org/licenses/lgpl.txt)
+  - Jacorb IDL (http://www.jacorb.org) org.jacorb:jacorb-idl:jar:2.2.3-jonas-patch-20071018
+    License: lgpl  (http://www.gnu.org/licenses/lgpl.txt)
+  - Javassist (http://www.javassist.org/) org.javassist:javassist:bundle:3.17.1-GA
+    License: MPL 1.1  (http://www.mozilla.org/MPL/MPL-1.1.html)    License: LGPL 2.1  (http://www.gnu.org/licenses/lgpl-2.1.html)    License: Apache License 2.0  (http://www.apache.org/licenses/)
+  - JBossTS jbossjta (http://www.jboss.org/jbosstm/) org.jboss.jbossts:jbossjta:jar:4.16.6.Final
+    License: LGPL 2.1  (http://www.gnu.org/licenses/lgpl-2.1.html)
+  - LZ4 and xxHash (https://github.com/lz4/lz4-java) org.lz4:lz4-java:jar:1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache NiFi Project' (http://nifi.apache.org/)
+  - nifi-utils (http://nifi.apache.org/nifi-commons/nifi-utils) org.apache.nifi:nifi-utils:jar:1.9.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - J2EE Connector 1.5 (http://geronimo.apache.org/specs/geronimo-j2ee-connector_1.5_spec) org.apache.geronimo.specs:geronimo-j2ee-connector_1.5_spec:jar:1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'FasterXML' (http://fasterxml.com/)
+  - Jackson-annotations (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-annotations:bundle:2.9.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-core (https://github.com/FasterXML/jackson-core) com.fasterxml.jackson.core:jackson-core:bundle:2.9.7
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jackson-databind (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-databind:bundle:2.9.7
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Hibernate.org' (http://hibernate.org)
+  - A Hibernate Core Module (http://hibernate.org) org.hibernate:hibernate-core:jar:4.1.9.Final
+    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/lgpl-2.1.html)
+  - Hibernate Commons Annotations (http://hibernate.org) org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final
+    License: GNU LESSER GENERAL PUBLIC LICENSE  (http://www.gnu.org/licenses/lgpl-2.1.html)
+  - JPA 2.0 API (http://hibernate.org) org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final
+    License: $license.name  (license.txt)
+
+From: 'JBoss by Red Hat' (http://www.jboss.org)
+  - JBoss Logging 3 (http://www.jboss.org) org.jboss.logging:jboss-logging:jar:3.1.0.GA
+    License: GNU Lesser General Public License, version 2.1  (http://www.gnu.org/licenses/lgpl-2.1.txt)
+  - Java Servlet 3.0 API (http://www.jboss.org/jboss-servlet-api_3.0_spec) org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:jar:1.0.2.Final
+    License: Common Development and Distribution License  (http://repository.jboss.org/licenses/cddl.txt)    License: GNU General Public License, Version 2 with the Classpath Exception  (http://repository.jboss.org/licenses/gpl-2.0-ce.txt)
+
+From: 'JBoss, a division of Red Hat, Inc.' (http://www.jboss.org)
+  - Transaction 1.1 API (http://jboss-transaction-api_1.1_spec/) org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.0.Final
+    License: lgpl  (http://repository.jboss.org/licenses/lgpl-2.1.txt)
+
+From: 'MetaStuff Ltd.' (http://sourceforge.net/projects/dom4j)
+  - dom4j (http://dom4j.org) dom4j:dom4j:jar:1.6.1
+
+
+From: 'ObjectWeb HOWL' (http://forge.objectweb.org/projects/howl)
+  - HOWL logger (http://forge.objectweb.org/projects/howl/) org.objectweb.howl:howl:jar:1.0.1-1
+    License: BSD 
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - javax.ws.rs-api (http://jax-rs-spec.java.net) javax.ws.rs:javax.ws.rs-api:jar:2.0.1
+    License: CDDL 1.1  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'OW2 Consortium' (http://www.ow2.org)
+  - CAROL: Common Architecture for RMI OW2 Layer (http://carol.ow2.org/carol-modules/carol) org.ow2.carol:carol:jar:3.0-RC7
+
+  - IRMI  org.ow2.carol.irmi:irmi:bundle:1.1.1
+    License: GNU Lesser General Public License Version 2.1  (http://www.gnu.org/licenses/lgpl.html)
+  - JOTM :: Core  org.ow2.jotm:jotm-core:bundle:2.1.1
+    License: GNU LESSER GENERAL PUBLIC LICENSE Version 2.1  (http://www.gnu.org/copyleft/lesser.html)
+
+From: 'Spring IO' (http://projects.spring.io/spring-framework)
+  - Spring AOP (https://github.com/spring-projects/spring-framework) org.springframework:spring-aop:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Beans (https://github.com/spring-projects/spring-framework) org.springframework:spring-beans:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Context (https://github.com/spring-projects/spring-framework) org.springframework:spring-context:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Core (https://github.com/spring-projects/spring-framework) org.springframework:spring-core:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Expression Language (SpEL) (https://github.com/spring-projects/spring-framework) org.springframework:spring-expression:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring JDBC (https://github.com/spring-projects/spring-framework) org.springframework:spring-jdbc:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Object/Relational Mapping (https://github.com/spring-projects/spring-framework) org.springframework:spring-orm:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Transaction (https://github.com/spring-projects/spring-framework) org.springframework:spring-tx:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Web (https://github.com/spring-projects/spring-framework) org.springframework:spring-web:jar:4.3.19.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'spring.io' (http://spring.io/)
+  - spring-security-config (http://spring.io/spring-security) org.springframework.security:spring-security-config:jar:4.2.8.RELEASE
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - spring-security-core (http://spring.io/spring-security) org.springframework.security:spring-security-core:jar:4.2.8.RELEASE
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - spring-security-web (http://spring.io/spring-security) org.springframework.security:spring-security-web:jar:4.2.8.RELEASE
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Collections (http://jakarta.apache.org/commons/collections/) commons-collections:commons-collections:jar:3.2
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Logging (http://jakarta.apache.org/commons/logging/) commons-logging:commons-logging-api:jar:1.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Commons IO (http://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Logging (http://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The HSQL Development Group' (http://hsqldb.org)
+  - HyperSQL Database (http://hsqldb.org) org.hsqldb:hsqldb:jar:2.3.2
+    License: HSQLDB License, a BSD open source license  (http://hsqldb.org/web/hsqlLicense.html)
+
+From: 'xerial.org'
+  - snappy-java (https://github.com/xerial/snappy-java) org.xerial.snappy:snappy-java:bundle:1.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+
