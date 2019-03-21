@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    top level element of the Spring configuration. Note the multiple namespace definition for both
+    GigaSpaces and Spring. You can simply copy and paste this portion of the pu.xml file
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:os-core="http://www.openspaces.org/schema/core"
+       xmlns:os-events="http://www.openspaces.org/schema/events"
+       xmlns:os-remoting="http://www.openspaces.org/schema/remoting"
+       xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+   http://www.openspaces.org/schema/core http://www.openspaces.org/schema/14.0/core/openspaces-core.xsd
+   http://www.openspaces.org/schema/events http://www.openspaces.org/schema/14.0/events/openspaces-events.xsd
+   http://www.openspaces.org/schema/remoting http://www.openspaces.org/schema/14.0/remoting/openspaces-remoting.xsd">
+
+
+    <context:component-scan base-package="com.samples" />
+
+    <!-- Enables to configure Spring beans through annotations   -->
+    <context:annotation-config />
+
+    <!-- Enable OpenSpaces core annotation support. -->
+    <os-core:annotation-support />
+
+    <!-- Enables using @Polling and @Notify annotations to creating polling and notify containers  -->
+    <os-events:annotation-support />
+
+    <!-- Enables using @RemotingService and other remoting related annotations   -->
+    <os-remoting:annotation-support />
+
+    <!--
+        A bean representing a Space. Here we configure an embedded space. Note
+        that we do not specify here the cluster topology of the Space. It is
+        declared by the os-sla:sla element of this pu.xml file.
+    -->
+    <bean id="dateUtil" class="com.gs.DateUtil"/>
+    <os-core:embedded-space id="space" space-name="mySpace">
+        <os-core:space-sql-function name="ROUNDTOMINS">
+            <os-core:sql-function ref="dateUtil" />
+        </os-core:space-sql-function>
+        <os-core:properties>
+            <props>
+                <prop key="space-config.engine.cache_policy">1</prop>
+                <prop key="space-config.engine.memory_usage.high_watermark_percentage">97</prop>
+                <prop key="space-config.engine.memory_usage.write_only_block_percentage">96</prop>
+                <prop key="space-config.engine.memory_usage.write_only_check_percentage">95</prop>
+                <prop key="space-config.engine.memory_usage.low_watermark_percentage">94</prop>
+            </props>
+        </os-core:properties>
+    </os-core:embedded-space>
+
+    <!-- Defines a distributed transaction manager.-->
+    <os-core:distributed-tx-manager id="transactionManager" />
+
+    <!-- Define the GigaSpace instance that the application will use to access the space  -->
+    <os-core:giga-space id="gigaSpace" space="space" tx-manager="transactionManager"/>
+
+</beans>
