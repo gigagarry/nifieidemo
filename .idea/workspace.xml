@@ -10,10 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba6bc69-903f-4d6c-a6e1-bdc27c6167d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqldatefunctions/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/src/main/resources/pu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/src/main/resources/pu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/classes/META-INF/DEPENDENCIES" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/target/classes/META-INF/DEPENDENCIES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/classes/com/gs/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/target/classes/com/gs/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/dateUtil-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/target/dateUtil-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/surefire-reports/TEST-com.gs.DateUtilTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/surefire-reports/com.gs.DateUtilTest-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/surefire-reports/com.gs.DateUtilTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/test-classes/META-INF/DEPENDENCIES" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/target/test-classes/META-INF/DEPENDENCIES" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqldatefunctions/target/test-classes/com/gs/DateUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sqldatefunctions/target/test-classes/com/gs/DateUtilTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,13 +36,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gsnars" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            <state relative-caret-position="152">
+              <caret line="225" column="33" selection-start-line="225" selection-start-column="33" selection-end-line="225" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,10 +54,61 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1.jar!/com/j_spaces/jdbc/driver/GResultSet.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1.jar!/com/j_spaces/jdbc/ResultEntry.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="e#1746#1747#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/space-document-example/com/samples/udf/CustomSqlFunctionClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/DateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/main/resources/pu.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nifi-gs-processors/src/test/java/com/gigaspaces/processors/GSInjestProcessorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="43" column="141" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="141" />
+            <state relative-caret-position="165">
+              <caret line="43" column="141" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="141" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nifi-gs-processors/src/main/java/com/gigaspaces/com/processors/GSInjestProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="373" column="4" lean-forward="true" selection-start-line="373" selection-start-column="4" selection-end-line="374" selection-end-column="77" />
+            <state relative-caret-position="4575">
+              <caret line="373" column="4" selection-start-line="373" selection-start-column="4" selection-end-line="374" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,10 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>attributes</find>
-      <find>FRAGMENT_ID</find>
-      <find>FRAGMENT_COUNT</find>
-      <find>SpaceSchema</find>
       <find>out</find>
       <find>createspa</find>
       <find>not</find>
@@ -107,6 +165,10 @@
       <find>browser.cl</find>
       <find>browser.close()</find>
       <find>ObjectInput</find>
+      <find>prop</find>
+      <find>123</find>
+      <find>ldts</find>
+      <find>ldtst</find>
     </findStrings>
     <replaceStrings>
       <replace>rootNode.fieldNames()</replace>
@@ -151,9 +213,9 @@
         <option value="$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/dateUtil.java" />
         <option value="$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/dataUtilTest.java" />
         <option value="$PROJECT_DIR$/sqldatefunctions/src/test/java/gs/DateUtilTest.java" />
+        <option value="$PROJECT_DIR$/sqldatefunctions/pom.xml" />
         <option value="$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/DateUtil.java" />
         <option value="$PROJECT_DIR$/sqldatefunctions/src/main/resources/pu.xml" />
-        <option value="$PROJECT_DIR$/sqldatefunctions/pom.xml" />
         <option value="$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java" />
       </list>
     </option>
@@ -175,16 +237,26 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="675" />
-    <option name="y" value="333" />
-    <option name="width" value="2831" />
-    <option name="height" value="1610" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="715" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="gsnars" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gsnars" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,82 +267,6 @@
             <path>
               <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
               <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="processors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
-              <item name="nifi-gs-processors" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="processors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
               <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -278,6 +274,38 @@
               <item name="gsnars" type="462c0819:PsiDirectoryNode" />
               <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
@@ -303,16 +331,35 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gs" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
             <path>
-              <item name="gsnars" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gsnars" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsnars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsnars" type="462c0819:PsiDirectoryNode" />
+              <item name="sqldatefunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -423,56 +470,56 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DateUtilTest - 2019.03.22 at 10h 37m 09s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 15m 32s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 10h 55m 10s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 18m 33s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 10h 56m 30s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 22m 24s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 10h 57m 13s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 30m 34s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 11h 02m 01s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 31m 18s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 11h 14m 28s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 32m 47s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 11h 22m 44s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 35m 52s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 11h 24m 45s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 40m 24s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 11h 49m 33s.xml">
+    <history-entry file="DateUtilTest - 2019.03.23 at 15h 42m 36s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DateUtilTest - 2019.03.22 at 12h 41m 03s.xml">
+    <history-entry file="DateUtilTest - 2019.03.25 at 06h 58m 20s.xml">
       <configuration name="DateUtilTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="675" y="333" width="2831" height="1610" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="715" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62439805" visible="true" weight="0.14521334" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.55307263" visible="true" weight="0.33198708" />
       <window_info id="Structure" order="1" sideWeight="0.37560192" side_tool="true" weight="0.30583334" />
       <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.44692737" side_tool="true" visible="true" weight="0.33198708" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32744783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49982074" visible="true" weight="0.34848484" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30105403" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6688207" visible="true" weight="0.42536116" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.68174475" weight="0.5072231" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5001793" side_tool="true" visible="true" weight="0.34848484" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32695985" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33117932" side_tool="true" visible="true" weight="0.42536116" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4951535" weight="0.32423756" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -527,27 +574,84 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
-          <line>101</line>
+          <line>257</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
-          <line>100</line>
+          <line>256</line>
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
-          <line>63</line>
+          <line>229</line>
           <properties />
           <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
+          <line>236</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/DateUtil.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
+          <line>202</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>squery</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gigaSpace.read(squery)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gigaSpace.write(dataAsDocument)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>gigaSpace.</expression-string>
         <language-id>JAVA</language-id>
@@ -575,21 +679,6 @@
       </expression>
       <expression>
         <expression-string>gigaSpace.getTypeManager().getTypeDescriptor(&quot;taxi&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>gigaSpace.getSpace(&quot;taxi&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tt.toString().split(&quot;:&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tt.toString()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -652,10 +741,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/insightedge-grafana-connector/tablesData.txt" />
-    <entry file="file://$PROJECT_DIR$/insightedge-grafana-connector/src/test/java/com/gigaspaces/MetricsResourceTest.java" />
-    <entry file="file://$PROJECT_DIR$/insightedge-grafana-connector/src/main/java/com/gigaspaces/MetricsResource.java" />
-    <entry file="file://$PROJECT_DIR$/insightedge-grafana-connector/src/main/java/com/gigaspaces/Range.java" />
     <entry file="file://$PROJECT_DIR$/insightedge-grafana-connector/src/main/java/com/gigaspaces/SpaceDS.java" />
     <entry file="file://$PROJECT_DIR$/insightedge-grafana-connector/grafana-insightedge.properties" />
     <entry file="file://$PROJECT_DIR$/insightedge-grafana-connector/src/main/resources/tablesData.txt" />
@@ -749,23 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="262" selection-start-line="262" selection-end-line="262" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/main/resources/pu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -937,10 +1005,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1.jar!/com/j_spaces/jdbc/ResultEntry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#1746#1747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/space-document-example/com/samples/udf/MyCustomSqlFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nifi-gs-processors/src/test/java/com/gigaspaces/processors/GSInjestProcessorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="43" column="141" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="141" />
+        <state relative-caret-position="165">
+          <caret line="43" column="141" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="141" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -949,18 +1034,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nifi-gs-processors/src/main/java/com/gigaspaces/com/processors/GSInjestProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="373" column="4" lean-forward="true" selection-start-line="373" selection-start-column="4" selection-end-line="374" selection-end-column="77" />
+        <state relative-caret-position="4575">
+          <caret line="373" column="4" selection-start-line="373" selection-start-column="4" selection-end-line="374" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/space-document-example/com/samples/udf/CustomSqlFunctionClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/main/java/com/gs/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1.jar!/com/j_spaces/jdbc/driver/GResultSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/main/resources/pu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sqldatefunctions/src/test/java/com/gs/DateUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        <state relative-caret-position="152">
+          <caret line="225" column="33" selection-start-line="225" selection-start-column="33" selection-end-line="225" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
