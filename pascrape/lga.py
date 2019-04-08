@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from pyvirtualdisplay import Display
 from selenium import webdriver
 import json
-import datetime
+from datetime import datetime
 
 
 data = {}
@@ -25,7 +25,12 @@ try:
         data["lot"]=desc.strip()
         data["pct"]=int(pct)
         data['airport']="LGA"
-        data['asof']=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        rightnow = datetime.now()
+        data['asof'] = rightnow.strftime("%Y-%m-%d %H:%M:%S.%f")
+        minraw = rightnow.minute
+        minnew = 5 * round(minraw / 5)
+        newdate = rightnow.replace(minute=minnew)
+        data['asofmin'] = newdate.strftime("%Y-%m-%d %H:%M:00.000")
         weightMatrix.append(data)
     json_data = json.dumps(weightMatrix)
     print(json_data)

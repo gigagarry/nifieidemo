@@ -30,7 +30,6 @@
     <modules>
         <module>nifi-gs-processors</module>
         <module>nifi-gs-nar</module>
-        <module>insightedge-grafana-connector</module>
         <module>sqldatefunctions</module>
     </modules>
 

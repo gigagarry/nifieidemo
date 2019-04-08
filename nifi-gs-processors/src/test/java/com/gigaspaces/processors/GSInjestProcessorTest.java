@@ -17,7 +17,6 @@
 package com.gigaspaces.processors;
 
 import com.gigaspaces.document.SpaceDocument;
-import com.gigaspaces.processors.GSInjestProcessor;
 import com.j_spaces.core.client.SQLQuery;
 import org.apache.nifi.processor.exception.ProcessException;
 import org.apache.nifi.reporting.InitializationException;
@@ -41,8 +40,8 @@ public class GSInjestProcessorTest {
     private TestRunner testRunner;
     private TestRunner testRunner2;
     private String jsonconfig = "{ \"name\": \"String\", \"age\": \"Integer\", \"city\": \"String\" }";
-    private String scrape = "[{\"lot\": \"Short-Term Parking A, B, C\", \"pct\": 73, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26\"}, {\"lot\": \"Daily Parking P4\", \"pct\": 94, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26\"}, {\"lot\": \"Economy Parking P6\", \"pct\": 70, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26\"}]\n";
-    private String config2="{ \"airport\": \"String\", \"pct\": \"Integer\", \"lot\": \"String\", \"asof\": \"DateTime\"}";
+    private String scrape = "[{\"lot\": \"Short-Term Parking A, B, C\", \"pct\": 73, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26.123\"}, {\"lot\": \"Daily Parking P4\", \"pct\": 94, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26.123\"}, {\"lot\": \"Economy Parking P6\", \"pct\": 70, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26.123\"}]\n";
+    private String config2="{ \"airport\": \"String\", \"pct\": \"Integer\", \"lot\": \"String\", \"asof\": \"DateTimeLong\"}";
     @Before
     public void init() {
         testRunner = TestRunners.newTestRunner(GSInjestProcessor.class);
@@ -82,8 +81,8 @@ public class GSInjestProcessorTest {
         runnertime.assertTransferCount(GSInjestProcessor.REL_DONE, 1);
         MockFlowFile orig2 = runnertime.getFlowFilesForRelationship(GSInjestProcessor.REL_ORIGINAL).get(0);
         MockFlowFile done2 = runnertime.getFlowFilesForRelationship(GSInjestProcessor.REL_DONE).get(0);
-        orig2.assertContentEquals("[{\"lot\": \"Short-Term Parking A, B, C\", \"pct\": 73, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26\"}, {\"lot\": \"Daily Parking P4\", \"pct\": 94, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26\"}, {\"lot\": \"Economy Parking P6\", \"pct\": 70, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26\"}]\n");
-
+        orig2.assertContentEquals("[{\"lot\": \"Short-Term Parking A, B, C\", \"pct\": 73, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26.123\"}, {\"lot\": \"Daily Parking P4\", \"pct\": 94, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26.123\"}, {\"lot\": \"Economy Parking P6\", \"pct\": 70, \"airport\": \"EWR\", \"asof\": \"2019-03-06 15:59:26.123\"}]\n");
+//        done2.assertContentEquals("[{\"typeName\":\"parking\",\"properties\":{\"lot\":\"Short-Term Parking A, B, C\",\"id\":\"A1^1553877215626^22\",\"asof\":1551887966123,\"pct\":73,\"airport\":\"EWR\"},\"transient\":false,\"version\":1}{\"typeName\":\"parking\",\"properties\":{\"lot\":\"Daily Parking P4\",\"id\":\"A2^1553877215665^12\",\"asof\":1551887966123,\"pct\":94,\"airport\":\"EWR\"},\"transient\":false,\"version\":1}{\"typeName\":\"parking\",\"properties\":{\"lot\":\"Economy Parking P6\",\"id\":\"A1^1553877215626^23\",\"asof\":1551887966123,\"pct\":70,\"airport\":\"EWR\"},\"transient\":false,\"version\":1}]");
         runner.setProperty(GSInjestProcessor.SPACE_OBJECT, "PERSONS");
         runner.setProperty(GSInjestProcessor.SPACE_NAME, "demo");
         runner.setProperty(GSInjestProcessor.STATEMENT_TYPE, "WRITE");
@@ -99,7 +98,7 @@ public class GSInjestProcessorTest {
         MockFlowFile orig = runner.getFlowFilesForRelationship(GSInjestProcessor.REL_ORIGINAL).get(0);
         System.out.println(orig);
         MockFlowFile done = runner.getFlowFilesForRelationship(GSInjestProcessor.REL_DONE).get(0);
-        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"nyc\",\"age\":\"21\",\"name\":\"Wright\"},\"transient\":false,\"version\":1}");
+        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"nyc\",\"age\":21,\"name\":\"Wright\"},\"transient\":false,\"version\":1}");
         orig.assertContentEquals("{ \"name\": \"Wright\", \"age\": \"21\", \"city\": \"nyc\" }");
 
         runner.setProperty(GSInjestProcessor.STATEMENT_TYPE, "UPDATE");
@@ -112,7 +111,7 @@ public class GSInjestProcessorTest {
         orig = runner.getFlowFilesForRelationship(GSInjestProcessor.REL_ORIGINAL).get(1);
         System.out.println(orig);
         done = runner.getFlowFilesForRelationship(GSInjestProcessor.REL_DONE).get(1);
-        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"miami\",\"age\":\"81\",\"name\":\"Wright\"},\"transient\":false,\"version\":2}");
+        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"miami\",\"age\":81,\"name\":\"Wright\"},\"transient\":false,\"version\":2}");
         orig.assertContentEquals("{ \"name\": \"Wright\", \"age\": \"81\", \"city\": \"miami\" }");
 
 
@@ -140,7 +139,7 @@ public class GSInjestProcessorTest {
         System.out.println(orig);
         done = runner2.getFlowFilesForRelationship(GSInjestProcessor.REL_DONE).get(0);
         orig.assertContentEquals("{ \"name\": \"Smith\", \"age\": \"2\", \"city\": \"NewPort\" }");
-        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":\"2\",\"name\":\"Smith\"},\"transient\":false,\"version\":1}");
+        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":2,\"name\":\"Smith\"},\"transient\":false,\"version\":1}");
 
         runner2.setProperty(GSInjestProcessor.STATEMENT_TYPE, "UPDATE");
         runner2.setProperty(GSInjestProcessor.UPDATE_KEY, "age,city");
@@ -151,7 +150,7 @@ public class GSInjestProcessorTest {
         orig = runner2.getFlowFilesForRelationship(GSInjestProcessor.REL_ORIGINAL).get(1);
         done = runner2.getFlowFilesForRelationship(GSInjestProcessor.REL_DONE).get(1);
         orig.assertContentEquals("{ \"name\": \"Smith\", \"age\": \"2\", \"city\": \"NewPort\" }");
-        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":\"2\",\"name\":\"Smith\"},\"transient\":false,\"version\":2}");
+        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":2,\"name\":\"Smith\"},\"transient\":false,\"version\":2}");
 
         runner2.setProperty(GSInjestProcessor.STATEMENT_TYPE, "UPDATE");
         runner2.setProperty(GSInjestProcessor.UPDATE_KEY, "age,city");
@@ -162,7 +161,7 @@ public class GSInjestProcessorTest {
         orig = runner2.getFlowFilesForRelationship(GSInjestProcessor.REL_ORIGINAL).get(2);
         done = runner2.getFlowFilesForRelationship(GSInjestProcessor.REL_DONE).get(2);
         orig.assertContentEquals("{ \"name\": \"Smith\", \"age\": \"2\", \"city\": \"NewPort\" }");
-        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":\"2\",\"name\":\"Smith\"},\"transient\":false,\"version\":3}");
+        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":2,\"name\":\"Smith\"},\"transient\":false,\"version\":3}");
 
 
 
@@ -175,7 +174,7 @@ public class GSInjestProcessorTest {
         orig = runner2.getFlowFilesForRelationship(GSInjestProcessor.REL_ORIGINAL).get(3);
         done = runner2.getFlowFilesForRelationship(GSInjestProcessor.REL_DONE).get(3);
         orig.assertContentEquals("{ \"name\": \"Smith\", \"age\": \"2\", \"city\": \"NewPort\" }");
-        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":\"2\",\"name\":\"Smith\"},\"transient\":false,\"version\":3}");
+        done.assertContentEquals("{\"typeName\":\"PERSONS\",\"properties\":{\"city\":\"NewPort\",\"age\":2,\"name\":\"Smith\"},\"transient\":false,\"version\":3}");
 
 
 
